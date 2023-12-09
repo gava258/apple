@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Tag Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Tag Css-->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Link para as fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Bebas+Neue&family=Poppins:wght@100&family=Raleway:ital,wght@0,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Novo Pedido</title>
+</head>
+
+<body class="fundo-pedidos">
+    <div id="texto" class="d-flex justify-content-center">
+        <img src="../novasImg/logo pizzaria 1.png" width="200px" height="200px" alt="">
+    </div>
+    <h1 class="text-center titulo-status">Fazer Novo Pedido</h1>
+
+    <div class="d-flex justify-content-center ">
+        <form method="POST" class="">
+            <div class=" area-formulario text-center">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <label for="nome" class="input-group-text texto-etiqueta">Nome do Cliente:</label>
+                    </div>
+                    <input type="text" name="nome" required class="form-control"><br>
+                </div>
+                <div class="input-group mt-2">
+                    <div class="input-group-prepend">
+                        <label for="data_pedido" class="input-group-text texto-etiqueta">Data do Pedido:</label>
+                    </div>
+                    <input type="date" name="data_pedido" required class="form-control"><br>
+                </div>
+                <div class="input-group mt-2">
+                    <div class="input-group-prepend">
+                        <label for="endereco" class="input-group-text texto-etiqueta">Endereço:</label>
+                    </div>
+                    <input type="text" name="endereco" required class="form-control"><br>
+                </div>
+                <div class="input-group mt-2">
+                    <div class="input-group-prepend">
+                        <label for="cep" class="input-group-text texto-etiqueta">CEP:</label>
+                    </div>
+                    <input type="text" name="cep" required class="form-control"><br>
+                </div>
+                <div class="input-group mt-2">
+                    <div class="input-group-prepend">
+                        <label for="tipo_pizza" class="input-group-text texto-etiqueta">Tipo de Pizza:</label>
+                    </div>
+                    <input type="text" name="tipo_pizza" required class="form-control"><br>
+                </div>
+                <div class="input-group mt-2">
+                    <div class="input-group-prepend">
+                        <label for="tipo_pagamento" class="input-group-text texto-etiqueta">Tipo de pagamento:</label>
+                    </div>
+                    <select name="tipo_pagamento" id="tipo_pagamento " class="form-control">
+                        <option value="Débito">Pagamento no Débito</option>
+                        <option value="Crédito">Pagamento no Crédito</option>
+                        <option value="Pix">Pagamento no Pix</option>
+                        <option value="Dinheiro">Pagamento no Dinheiro</option>
+                    </select>
+                </div>
+                <div class="input-group mt-2">
+                    <div class="input-group-prepend">
+                        <label for="observacoes" class="input-group-text texto-etiqueta">Observações:</label>
+                    </div>
+                    <textarea name="observacoes" class="form-control w-50 h-50"></textarea><br>
+                </div>
+
+                <button type="submit" class="botao-pedido btn">Cadastrar Pedido</button>
+            </div>
+        </form>
+    </div>
+
+
+
+    <div class="d-flex container mt-4 flex-column text-center">
+        <div class="">
+            <a href="index.html" class="btn botao-pedido">Voltar para a Página Inicial</a></br>
+            <a href="novo_pedido.html" class="btn botao-pedido">Cadastrar novo pedido</a></br>
+            <a href="filtro_data.html" class="btn botao-pedido">Filtrar pedido por data</a></br>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>

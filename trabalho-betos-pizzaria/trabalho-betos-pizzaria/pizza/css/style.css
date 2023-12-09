@@ -1,0 +1,448 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* plano de fundo */
+body,
+html {
+  height: 100%;
+}
+
+#pesquisa {
+  background-image: url(../novasImg/fotor-ai-20231115174233.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: black;
+}
+
+#pesquisa::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  /* Ajuste o último valor para alterar a opacidade da sobreposição */
+  z-index: 0;
+}
+
+/*fim plano de fundo */
+
+/* formatação de botoes e tags */
+.img-logo {
+  z-index: 1;
+}
+
+.fontePesquisa {
+  font-size: 4rem;
+  font-family: "sanshiro", sans-serif;
+  color: #f9c805;
+}
+
+.texto-etiqueta {
+  color: black;
+  font-family: "sanshiro", sans-serif;
+}
+
+.tamanho-fonte-etiqueta {
+  font-size: 30px;
+  color: white;
+}
+
+.barra-pesquisa-data {
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  width: 300px;
+  font-size: 20px;
+}
+
+.botao-pesquisa {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f9c805;
+  border: none;
+  transition: opacity 1s;
+}
+
+.botao-pesquisa:hover {
+  opacity: 0.6;
+}
+
+.editar-botoes {
+  font-size: 0.15rem;
+  border: 3px solid #f9c805;
+  border-radius: 20px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  transition: background 1.5s;
+}
+
+.editar-botoes:hover {
+  background: #f9c805;
+}
+
+/*fim formatação de botoes e tags */
+
+/*Formatações página index*/
+@font-face {
+  font-family: "NEON GLOW";
+  /* Nome que você quer dar à sua fonte */
+  src: url("NEON GLOW.otf") format("opentype");
+  /* Melhor suporte moderno */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sanshiro";
+  /* Nome que você quer dar à sua fonte */
+  src: url("sanshiro-demo.black.ttf") format("opentype");
+  /* Melhor suporte moderno */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "forest";
+  /* Nome que você quer dar à sua fonte */
+  src: url("forest.regular.otf") format("opentype");
+  /* Melhor suporte moderno */
+  font-weight: normal;
+  font-style: normal;
+}
+
+#index {
+  background-image: url(../novasImg/fotor-ai-20231115174245.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#index::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  /* Ajuste o último valor para alterar a opacidade da sobreposição */
+  z-index: 0;
+}
+
+.nome-apresentação {
+  font-family: "sanshiro", sans-serif;
+  font-size: 80px;
+  font-weight: 100;
+  color: #f9c805;
+}
+
+.formatação-texto-apresentacao {
+  font-size: 20px;
+  font-family: "forest", sans-serif;
+}
+
+.botao-novo-pedido {
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 40px;
+  color: white;
+  background: none;
+  font-family: "forest", sans-serif;
+  border: 1px solid #f9c805;
+  transition: background 2s;
+}
+
+.botao-novo-pedido:hover {
+  background: #f9c805;
+}
+
+/*Fim Formatações página index*/
+
+/* Formatações página detalhes pedido*/
+
+#pedidos {
+  background-image: url(../novasImg/fotor-ai-20231115174245.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+
+#pedidos::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 1000px;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  /* Ajuste o último valor para alterar a opacidade da sobreposição */
+  z-index: -1;
+}
+
+.titulo {
+  font-family: "sanshiro", sans-serif;
+  color: #f9c805;
+}
+
+.titulo-status {
+  font-family: "sanshiro", sans-serif;
+  font-size: 60px;
+  font-weight: 100;
+  color: #f9c805;
+}
+
+.editar-botoes-pedido {
+  font-size: 17px;
+  border: 3px solid #f9c805;
+  border-radius: 20px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  transition: background 1.5s;
+}
+
+.editar-botoes-pedido:hover {
+  background: #f9c805;
+}
+
+.barra-status-pedido {
+  text-align: center;
+  border-radius: 8px;
+  border: none;
+  width: 300px;
+  font-size: 20px;
+}
+
+.botao-atualizar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f9c805;
+  border: none;
+  transition: opacity 1s;
+}
+
+.botao-atualizar:hover {
+  opacity: 0.6;
+}
+
+.status-pedido,.info-pedidos-realizados {
+  font-family: "sanshiro", "sans-serif";
+  font-size: 20px;
+}
+
+/*Fim Formatações página detalhes pedido*/
+
+/*Formatações página novo_pedido */
+
+.fundo-pedidos {
+  background-image: url(../novasImg/Leonardo_Diffusion_XL_pizza_3.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+
+.fundo-pedidos::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 1000px;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  /* Ajuste o último valor para alterar a opacidade da sobreposição */
+  z-index: -1;
+}
+
+.area-formulario {
+  border: 1px solid #f9c805;
+  padding: 50px;
+  border-radius: 10%;
+}
+
+.botao-pedido {
+  font-size: 17px;
+  border: 3px solid #f9c805;
+  border-radius: 20px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  transition: background 1.5s;
+  margin-top: 20px;
+}
+
+.botao-pedido:hover {
+  background: #f9c805;
+}
+
+
+@media (max-width: 754px) {
+  .barra-status-pedido {
+    text-align: center;
+    border-radius: 8px;
+    border: none;
+    width: auto;
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  #pedidos {
+    background-image: url(../novasImg/fotor-ai-20231115174245.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+  }
+
+  #pedidos::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 1800px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    /* Ajuste o último valor para alterar a opacidade da sobreposição */
+    z-index: -1;
+  }
+  #sla {
+    background-image: url(../novasImg/fotor-ai-20231115174035.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+  }
+  
+  #sla::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 1800px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+}
+/* Formatações página pedido_por_data */
+
+#sla {
+  background-image: url(../novasImg/fotor-ai-20231115174035.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+
+#sla::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 1000px;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.sub-logo {
+  display: grid;
+  place-items: center;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.nome-titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "sanshiro", sans-serif;
+  font-size: 58px;
+  font-weight: 100;
+  color: #f9c805;
+  margin-bottom: 40px;
+}
+.info-pedidos-realizados{
+  margin: 1px solid green;
+  
+}
+
+.texto-apresentacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-family: "forest", sans-serif;
+  margin-bottom: 40px;
+}
+
+.transicao {
+  font-size: 17px;
+  border: 3px solid #f9c805;
+  border-radius: 20px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  transition: background 1.5s;
+  margin-top: 20px;
+}
+
+.transicao:hover {
+  background: #f9c805;
+}
+
+#texto {
+  opacity: 0.5;
+  transform: scale(0.8);
+  filter: blur(4px);
+  animation: aparecerLogo 1s ease-in-out forwards;
+}
+
+#texto img {
+  animation: pulso-logo 2s ease-in-out 3s infinite;
+}
+
+@keyframes aparecerLogo {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes pulso-logo {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/*Fim Formatações página pedido_por_data */
+
+
+
+
+
+
